@@ -1,0 +1,36 @@
+.custom-pagination {
+    display: flex;
+    gap: 10px;
+    &__prev {
+    }
+    &__num-btn {
+    }
+    &__next {
+    }
+}
+.custom-pagination-btn {
+    border: 1px solid $body-color;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover, &--active {
+        color: white;
+        background-color: $body-color;
+        transition: .3s ease;
+    }
+    &--disable {
+        border: 1px solid #CCCCCC;
+        cursor: default;
+    }
+    &--disable:hover {
+        border: 1px solid #CCCCCC;
+        background-color: transparent;
+        color: initial;
+    }
+}
+

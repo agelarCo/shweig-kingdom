@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Главная' })
+  <body class="page">
+     @@include('html/header.html', { })
+    <main class="overflow-hidden">
+      @@include('html/breadcrumbs.html', { })
+      <div class="container">
+        <div class="box-title">
+          <div class="box-title__container">
+            <h1 class="box-title__title">Швейные машины</h1>
+          </div>
+        </div>
+        <div class="d-flex gap-30">
+          <div class="wp-25 d-none d-xxl-block">
+            <div class="border border-muted p-15 d-flex flex-column gap-15">
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1.svg" alt="" />
+                ПОСЛЕДНИЕ НОВОСТИ
+              </a>
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1-1.svg" alt="" />
+                ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+              </a>
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1-2.svg" alt="" />
+                СПОСОБЫ ДОСТАВКИ
+              </a>
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1-3.svg" alt="" />
+                САМОВЫВОЗ СО СКЛАДА
+              </a>
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1-4.svg" alt="" />
+                КОНТАКТЫ ДЛЯ СВЯЗИ
+              </a>
+              <a
+                href=""
+                class="d-flex gap-10 align-items-center text-body-color"
+              >
+                <img src="./images/catalog-page/Frame1-5.svg" alt="" />
+                ОТЗЫВЫ О МАГАЗИНЕ
+              </a>
+            </div>
+          </div>
+          <div class="wp-100 wp-xxl-75">
+            @@include('html/filter.html', { })
+
+            <div class="mt-15 mt-lg-30">
+              <div class="grid-layout">
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+                @@include('html/product-card.html', { })
+              </div>
+              <div
+                class="custom-pagination d-flex justify-content-center mt-15 mt-lg-30"
+              >
+                <a href="#" class="custom-pagination__prev custom-pagination-btn">
+                  @@include('./html/sprite.html', { 'id': 'chevron-left',
+                  'width': '16px', 'height': '16px' })
+                </a>
+                <div class="d-flex gap-10">
+                  <a href="#"
+                    class="custom-pagination-btn custom-pagination__num-btn custom-pagination-btn--active"
+                  >
+                    1
+                  </a>
+                  <a href="#" class="custom-pagination-btn custom-pagination__num-btn">
+                    2
+                  </a>
+                  <a href="#" class="custom-pagination-btn custom-pagination__num-btn">
+                    3
+                  </a>
+                  <a href="#" class="custom-pagination-btn custom-pagination__num-btn">
+                    4
+                  </a>
+                </div>
+                <a href="#"
+                  class="custom-pagination__next custom-pagination-btn custom-pagination-btn--disable"
+                >
+                  @@include('./html/sprite.html', { 'id': 'chevron-right',
+                  'width': '16px', 'height': '16px' })
+                </a>
+              </div>
+              <div
+                class="custom-pagination d-flex justify-content-center mt-30 "
+              >
+                <div class="custom-pagination__prev custom-pagination-btn">
+                  @@include('./html/sprite.html', { 'id': 'chevron-left',
+                  'width': '16px', 'height': '16px' })
+                </div>
+                <div class="d-flex gap-10">
+                  <div
+                    class="custom-pagination-btn custom-pagination__num-btn custom-pagination-btn--active"
+                  >
+                    1
+                  </div>
+                  <div class="custom-pagination-btn custom-pagination__num-btn">
+                    2
+                  </div>
+                  <div class="custom-pagination-btn custom-pagination__num-btn">
+                    3
+                  </div>
+                  <div class="custom-pagination-btn custom-pagination__num-btn">
+                    4
+                  </div>
+                </div>
+                <div
+                  class="custom-pagination__next custom-pagination-btn custom-pagination-btn--disable"
+                >
+                  @@include('./html/sprite.html', { 'id': 'chevron-right',
+                  'width': '16px', 'height': '16px' })
+                </div>
+              </div>
+            </div>
+            @@include('html/welcome-catalog.html', { })
+            <div class="position-relative mt-30 mt-lg-40 pb-80 pb-lg-30">
+              <div class="box-title">
+                <div class="box-title__container justify-content-center justify-content-lg-start">
+                  <h2 class="box-title__title text-center text-lg-start">Последние новости</h2>
+                </div>
+              </div>
+              <div
+                class="slider-navigation-container justify-content-center justify-content-xl-start"
+              >
+                <div class="slider-button-prev last-news-button-prev">
+                  @@include('./html/sprite.html', { 'id': 'prev', 'width': '24px',
+                  'height': '24px' })
+                </div>
+                <div class="slider-button-next last-news-button-next">
+                  @@include('./html/sprite.html', { 'id': 'next', 'width': '24px',
+                  'height': '24px' })
+                </div>
+              </div>
+              <div class="swiper-slide last-news-slider overflow-hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="last-news-block">
+                      <a href="#" class="last-news-block__inner-image">
+                        <img
+                          src="./images/last-news/n01.png"
+                          class=""
+                          alt=""
+                        />
+                      </a>
+                      <div class="last-news-block__container">
+                        <div>
+                          <span class="last-news-block__date-sign"
+                            >26 ноября 2021 г.</span
+                          >
+                          <a href="#" class="last-news-block__title">
+                      JANOME CLIO 50 ИЛИ JANOME EQ 60?
+                    </a>
+                        </div>
+                        <div>
+                          <p class="last-news-block__subtitle">
+                            Janome - популярный во всем мире производитель
+                            швейной техники...
+                          </p>
+                          <a class="last-news-block__read-more" href="#"
+                            >Читать полностью @@include('./html/sprite.html', {
+                            'id': 'arrow-more', 'width': '5px', 'height': '9px'
+                            })</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="last-news-block">
+                      <a href="#" class="last-news-block__inner-image">
+                        <img
+                          src="./images/last-news/n01.png"
+                          class=""
+                          alt=""
+                        />
+                      </a>
+                      <div class="last-news-block__container">
+                        <div>
+                          <span class="last-news-block__date-sign"
+                            >26 ноября 2021 г.</span
+                          >
+                          <a href="#" class="last-news-block__title">
+                      JANOME CLIO 50 ИЛИ JANOME EQ 60?
+                    </a>
+                        </div>
+                        <div>
+                          <p class="last-news-block__subtitle">
+                            Janome - популярный во всем мире производитель
+                            швейной техники...
+                          </p>
+                          <a class="last-news-block__read-more" href="#"
+                            >Читать полностью @@include('./html/sprite.html', {
+                            'id': 'arrow-more', 'width': '5px', 'height': '9px'
+                            })</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="last-news-block">
+                      <a href="#" class="last-news-block__inner-image">
+                        <img
+                          src="./images/last-news/n01.png"
+                          class=""
+                          alt=""
+                        />
+                      </a>
+                      <div class="last-news-block__container">
+                        <div>
+                          <span class="last-news-block__date-sign"
+                            >26 ноября 2021 г.</span
+                          >
+                          <a href="#" class="last-news-block__title">
+                      JANOME CLIO 50 ИЛИ JANOME EQ 60?
+                    </a>
+                        </div>
+                        <div>
+                          <p class="last-news-block__subtitle">
+                            Janome - популярный во всем мире производитель
+                            швейной техники...
+                          </p>
+                          <a class="last-news-block__read-more" href="#"
+                            >Читать полностью @@include('./html/sprite.html', {
+                            'id': 'arrow-more', 'width': '5px', 'height': '9px'
+                            })</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="last-news-block">
+                      <a href="#" class="last-news-block__inner-image">
+                        <img
+                          src="./images/last-news/n01.png"
+                          class=""
+                          alt=""
+                        />
+                      </a>
+                      <div class="last-news-block__container">
+                        <div>
+                          <span class="last-news-block__date-sign"
+                            >26 ноября 2021 г.</span
+                          >
+                          <a href="#" class="last-news-block__title">
+                      JANOME CLIO 50 ИЛИ JANOME EQ 60?
+                    </a>
+                        </div>
+                        <div>
+                          <p class="last-news-block__subtitle">
+                            Janome - популярный во всем мире производитель
+                            швейной техники...
+                          </p>
+                          <a class="last-news-block__read-more" href="#"
+                            >Читать полностью @@include('./html/sprite.html', {
+                            'id': 'arrow-more', 'width': '5px', 'height': '9px'
+                            })</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"></div>
+    </main>
+    @@include('./html/footer.html', {
+      
+      })
+  </body>
+</html>

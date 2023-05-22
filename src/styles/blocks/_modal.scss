@@ -1,0 +1,55 @@
+.modal-custom {
+  padding: 30px 50px;
+  background-color: white;
+  border-radius: 0;
+  
+  &__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+}
+
+.modal-custom-close {
+    flex-shrink: 0;
+    cursor: pointer;
+    
+    
+}
+
+.modal-custom-attach {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__inner-image {
+        margin-bottom: 5px;
+        width: 150px;
+        img {
+            width: 100%;
+        }
+    }
+    &__button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .modal-custom {
+        padding: 30px 30px;
+        &__title {
+        }
+      }
+      .modal-custom-close {
+        top: 30px;
+        left: 30px;
+      }
+}

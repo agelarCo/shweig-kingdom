@@ -1,0 +1,87 @@
+.filter-line {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $opposite;
+  border-radius: 5px;
+  gap: 20px;
+}
+.filter-line-sort {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  position: relative;
+  color: $secondary;
+  line-height: 100%;
+  & > svg {
+    width: 12px;
+    height: 7px;
+  }
+  &__dropdown {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 200px;
+    background-color: $system-component;
+    flex-direction: column;
+    gap: 15px;
+    &:hover {
+      display: flex;
+    }
+  }
+  &:hover &__dropdown {
+    display: flex;
+  }
+}
+
+.filter-line-btn {
+  cursor: pointer;
+  display: block;
+  svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    color: $secondary;
+  }
+  &:hover {
+    svg {
+      color: $primary;
+    }
+  }
+}
+.filter-line-btn--filter {
+  display: none;
+}
+
+.filter-line-btn--active {
+  svg {
+    color: $primary;
+  }
+}
+.filter-line-btn--col {
+}
+.filter-line-btn--row {
+}
+
+@media (max-width: 1200px) {
+  .filter-line-btn--filter {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .filter-line-sort {
+    align-items: end;
+    width: 160px;
+    gap: 10px;
+    font-size: 14px;
+    & > svg {
+      margin-bottom: 10px;
+    }
+  }
+}

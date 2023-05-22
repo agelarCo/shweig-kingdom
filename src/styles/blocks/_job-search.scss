@@ -1,0 +1,31 @@
+.job-search-block {
+  & ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  & ul li {
+    list-style: none;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      display: block;
+      background-color: $secondary;
+      top: 5px;
+      left: -20px;
+    }
+  }
+}
+
+
+
+@media (max-width: 992px) {
+    .job-search-block {
+        ul {
+            margin-bottom: 15px;
+        }
+    }
+}

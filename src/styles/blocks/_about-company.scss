@@ -1,0 +1,49 @@
+.about-image {
+  width: 450px;
+  height: 350px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about-company-content {
+  & p:nth-child(2) {
+    font-size: 20px;
+    color: $body-color;
+  }
+  & p {
+    color: $secondary;
+  }
+}
+
+.service-about-image {
+  height: 400px;
+}
+
+
+.service-about-image {
+  height: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .service-about-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .about-image {
+        margin-right: auto;
+        margin-left: auto;
+      }
+}
+
+@media (max-width: 575px) {
+    .about-image {width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+}

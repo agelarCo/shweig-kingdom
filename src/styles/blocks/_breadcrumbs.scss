@@ -1,0 +1,34 @@
+.breadcrumbs {
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    li + li::before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: $primary;
+      flex-shrink: 0;
+    }
+    a {
+      color: $body-color;
+      font-size: 12px;
+    }
+    li:last-child a {
+      color: $primary;
+    }
+  }
+}

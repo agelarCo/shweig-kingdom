@@ -1,0 +1,33 @@
+
+.adventages-block {
+    flex-direction: column;
+		&__inner-image {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+            }
+		}
+}
+
+@media (max-width: 992px) {
+    .adventages-block {
+    &__inner-image {
+        width: 65px;
+        height: 65px;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .adventages-block {
+        flex-direction: row;
+        gap: 15px;
+    &__inner-image {
+        width: 65px;
+        height: 65px;
+    }
+}
+}

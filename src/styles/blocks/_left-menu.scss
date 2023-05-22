@@ -1,0 +1,28 @@
+.left-menu {
+  & a:first-child {
+    border-radius: 5px 5px 0px 0px;
+  }
+  & a:last-child {
+    border-radius: 0px 0px 5px 5px;
+  }
+  & a {
+    padding: 30px;
+    border: 1px solid $opposite;
+    color: $body-color;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+  }
+  &__active-link {
+    border: 1px solid $primary !important;
+    color: $primary !important;
+  }
+}
+
+@media (max-width: 1200px) {
+    .left-menu {
+        display: none;
+    }
+}
+
+

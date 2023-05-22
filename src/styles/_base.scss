@@ -1,0 +1,244 @@
+.inner-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.label-btn-sup {
+  display: flex;
+  background-color: $primary;
+  border-radius: 50%;
+  width: 24px;
+  flex-shrink: 0;
+  height: 24px;
+  svg {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.custom-btn {
+  border-radius: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid $primary;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.scroll-mobile-decorator {
+}
+@media (max-width: 992px) {
+  .scroll-mobile-decorator-scroller {
+    overflow-x: scroll;
+  }
+  .scroll-mobile-decorator {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100%;
+      position: absolute;
+      right: -2px;
+      top: 0;
+      background: linear-gradient(
+        270deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 90.85%
+      );
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .scroll-mobile-decorator {
+    position: relative;
+    &::after {
+      content: "";
+      width: 40px;
+    }
+  }
+}
+
+.cart-input {
+  background-color: transparent;
+  font-size: 17px;
+  padding: 0;
+  width: 30px;
+  border: none;
+  text-align: center;
+}
+
+.custom-input-checkbox {
+  display: block;
+  input[type="radio"] {
+    display: none;
+  }
+  &__container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  &__circle {
+    border-radius: 50%;
+    border: 2px solid $primary;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    display: flex;
+  }
+  &__dot {
+    border-radius: 50%;
+    background-color: $primary;
+    opacity: 0;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+  }
+
+  input[type="radio"]:checked ~ &__container {
+    border: 1px solid $primary;
+  }
+  input[type="radio"]:checked ~ &__container &__circle {
+    border: 1px solid $primary;
+  }
+  input[type="radio"]:checked ~ &__container &__dot {
+    opacity: 1;
+  }
+}
+
+.form-check-input:checked {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+@media (max-width: 992px) {
+  .custom-input-checkbox {
+    input {
+      display: none;
+    }
+    &__container {
+      font-size: 14px;
+    }
+  }
+}
+
+.spec-icons {
+  width: 45px;
+}
+
+@media (max-width: 992px) {
+  .spec-icons {
+    width: 32px;
+  }
+}
+
+.swiper-slide.zoom {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.swiper-slide.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+.swiper-slide.zoom img:hover {
+  opacity: 0;
+}
+
+[data-map] {
+}
+
+@media (max-width: 992px) {
+  [data-map] {
+    height: 360px;
+  }
+}
+.scaleble,
+.rotateble {
+  transition: 0.3s ease-in-out;
+}
+
+.scaleble:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.rotateble:hover {
+  transform: rotate(360deg);
+  transition: 0.3s ease-in-out;
+}
+.scaleble-with-image,
+.rotateble-with-image {
+  transition: 0.3s ease-in-out;
+}
+
+.scaleble-with-image:hover {
+  img,
+  svg {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+  }
+}
+.rotateble-with-image:hover {
+  img,
+  svg {
+    transform: rotate(360deg);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+
+@keyframes backInLeft {
+  0% {
+    transform: translateY(-2000px) scale(0.7);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateX(0px) scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInLeft {
+  animation-name: backInLeft;
+  
+}
+
+.delay-start {
+  animation-delay: .3s;
+}
+
+.delay-middle {
+  animation-delay: .7s;
+}
+.delay-end {
+  animation-delay: 1s;
+}
+
+
+

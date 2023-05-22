@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 300;
+  src: local("SegoeUI-Light"),
+    url("../fonts/SegoeUI-Light.woff2") format("woff2"),
+    url("../fonts/SegoeUI-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 400;
+  src: local("SegoeUI"),
+    url("../fonts/SegoeUI.woff2") format("woff2"),
+    url("../fonts/SegoeUI.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 600;
+  src: local("SegoeUI-SemiBold"),
+    url("../fonts/SegoeUI-SemiBold.woff2") format("woff2"),
+    url("../fonts/SegoeUI-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUI";
+  font-weight: 700;
+  src: local("SegoeUI-Bold"), url("../fonts/SegoeUI-Bold.woff2") format("woff2"),
+    url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-display: swap;
+}
+

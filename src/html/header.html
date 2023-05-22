@@ -1,0 +1,477 @@
+<header class="position-relative">
+  <div class="container">
+    <div class="d-flex justify-content-between py-10">
+      <div
+        class="header-burger d-xxl-none"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExampleMenu"
+      >
+        @@include('./sprite.html', { 'id': 'sort', 'width': '24px', 'height':
+        '24px' })
+      </div>
+      <div class="d-none d-xxl-flex gap-15">
+        <a
+          class="nav-link dropdown-toggle d-flex align-items-center text-body-color gap-5"
+          href="#"
+          id="navbarDarkDropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          @@include('./sprite.html', { 'id': 'map-icon', 'width': '16px',
+          'height': '16px' }) Москва
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <span class="fs-7"
+          >Метро Тульская, ул. Серпуховский Вал, д.17, к.1</span
+        >
+      </div>
+
+      <nav>
+        <ul class="p-0 m-0 list-unstyled d-none d-xxl-flex gap-25 fs-7 inner-links">
+          <li><a href="news-once-page.html" class=" text-primary-hover active">О магазине</a></li>
+          <li><a href="news-page.html" class="text-primary-hover">Новости</a></li>
+          <li><a href="deliver-page.html" class="text-primary-hover">Доставка</a></li>
+          <li><a href="buy-on-credit.html" class="text-primary-hover">Оплата</a></li>
+          <li><a href="reviews-page.html" class="text-primary-hover">Отзывы</a></li>
+          <li><a href="contacts.html" class=" text-primary-hover">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex gap-10">
+        <div class="d-flex gap-15">
+          <div
+            class="header-btn-sup d-xxl-none"
+            data-bs-toggle="collapse"
+            data-bs-target="#searchButton"
+          >
+            @@include('./sprite.html', { 'id': 'search-normal', })
+          </div>
+          <a href="tel:+7 (499) 350 00 94" class="header-btn-sup d-xxl-none">
+            @@include('./sprite.html', { 'id': 'call', })
+          </a>
+          <div class="header-btn-sup d-xxl-none">
+            @@include('./sprite.html', { 'id': 'shop', })
+          </div>
+          <a class="header-btn-sup text-body-color text-primary-hover">
+            @@include('./sprite.html', { 'id': 'bag', })
+          </a>
+        </div>
+        <a href="#" class="text-body-color ws-nowrap fs-7">
+          <span class="d-none d-xxl-inline">В корзине</span>
+          <span>10 шт</span>
+          <span>= 1 252 342 руб.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="border-1 border-top border-muted border-bottom py-15">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center gap-10">
+        <a href="/" class="header-logo">
+          <img src="./images/header-logo.svg" alt="" />
+        </a>
+        <div class="header-first-search collapse" id="searchButton">
+          <div class="header-first-search__container">
+            <input
+              class="header-first-search__input"
+              type="text"
+              placeholder="Поиск"
+            />
+            @@include('./sprite.html', { 'id': 'search-normal', 'width': '24px',
+            'height': '24px' })
+          </div>
+        </div>
+        <div class="header-first-search d-none d-xxl-block">
+          <div class="header-first-search__container">
+            <input
+              class="header-first-search__input"
+              type="text"
+              placeholder="Поиск"
+            />
+            @@include('./sprite.html', { 'id': 'search-normal', 'width': '24px',
+            'height': '24px' })
+          </div>
+        </div>
+        <div
+          class="d-none d-xxl-flex flex-column justify-content-end text-center text-xxl-end"
+        >
+          <a href="tel:80000000000" class="text-body-color fs-4 fw-bold"
+            >+7 (499) 350 00 94</a
+          >
+          <span class="text-muted fs-8">Без выходных с 10:00 до 20:00</span>
+        </div>
+        <div class="d-none d-xxl-flex gap-30">
+          <div class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#callback">
+            <div class="label-btn-sup">
+              @@include('./sprite.html', { 'id': 'call', 'width': '16px',
+              'height': '16px' })
+            </div>
+            <span> обратный звонок</span>
+          </div>
+          <div class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#question">
+            <div class="label-btn-sup">
+              @@include('./sprite.html', { 'id': 'shop', 'width': '16px',
+              'height': '16px' })
+            </div>
+            <span>Написать В магазин</span>
+          </div>
+        </div>
+        <div
+          class="header-line-menu-catalog d-xxl-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+        >
+          <div class="header-line-menu-catalog__inner-icon">
+            @@include('./sprite.html', { 'id': 'catalog', 'width': '24px',
+            'height': '24px' })
+          </div>
+          <span>Каталог</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-none d-xxl-flex gap-30 align-items-center py-15">
+      <div class="header-line-menu">
+        <div
+          class="header-line-menu-catalog"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+        >
+          <div class="header-line-menu-catalog__inner-icon">
+            @@include('./sprite.html', { 'id': 'catalog', 'width': '24px',
+            'height': '24px' })
+          </div>
+          Каталог продукции
+        </div>
+        <nav class="header-line-menu-list">
+          <ul>
+            <li>
+              <a href="akcii.html">
+                <img width='24'
+                height='24px' src="./images/menu/clipboard.svg" alt="">
+                
+                <span>Акции</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width='24'
+                height='24px' src="./images/menu/sewing-machine.svg" alt="">
+                
+                <span>Швейные машинки</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width='24'
+                height='24px' src="./images/menu/iron.svg" alt="">
+                
+                <span>Гладильная техника</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width='24'
+                height='24px' src="./images/menu/dummy-1.svg" alt="">
+               
+                <span>Манекены</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width='24'
+                height='24px' src="./images/menu/needles.svg" alt="">
+                
+                <span>Фурнитура</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img width='24'
+                height='24px' src="./images/menu/printer.svg" alt="">
+                
+                <span>Принтеры по текстилю</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header-burder-menu collapse" id="collapseExampleMenu">
+    <div class="header-burder-menu-container">
+      <div
+        class="m-auto my-10 d-flex justify-content-center"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExampleMenu"
+      >
+      
+        @@include('./sprite.html', { 'id': 'close', 'width': '24px', 'height':
+        '24px' })
+      </div>
+      <div class="header-burder-menu-container__scroller">
+        <div class="d-flex mb-15"></div>
+        <nav>
+          <div>
+            <ul class="p-0 m-0 pe-15 list-unstyled inner-links">
+              
+              <li class="mb-5"><a href="news-once-page.html" class=" text-primary-hover active">О магазине</a></li>
+          <li class="mb-5"><a href="news-page.html" class="text-primary-hover">Новости</a></li>
+          <li class="mb-5"><a href="deliver-page.html" class="text-primary-hover">Доставка</a></li>
+          <li class="mb-5"><a href="buy-on-credit.html" class="text-primary-hover">Оплата</a></li>
+          <li class="mb-5"><a href="reviews-page.html" class="text-primary-hover">Отзывы</a></li>
+          <li class="mb-5"><a href="contacts.html" class=" text-primary-hover">Контакты</a></li>
+              
+              <li class="mb-5">
+                <a href="#" class="text-primary-hover">Доставка</a>
+              </li>
+              <li class="mb-5">
+                <a href="#" class="text-primary-hover">Оплата</a>
+              </li>
+              <li class="mb-5">
+                <a href="#" class="text-primary-hover">Отзывы</a>
+              </li>
+              <li class="mb-5">
+                <a href="#" class="text-primary-hover">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="d-flex flex-column gap-15 pe-15 mt-15" >
+          <div class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#callback">
+            <div class="label-btn-sup">
+              @@include('./sprite.html', { 'id': 'call', 'width': '16px',
+              'height': '16px' })
+            </div>
+            <span> обратный звонок</span>
+          </div>
+          <div class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#question">
+            <div class="label-btn-sup">
+              @@include('./sprite.html', { 'id': 'shop', 'width': '16px',
+              'height': '16px' })
+            </div>
+            <span>Написать В магазин</span>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center mt-15"
+        >
+          <a
+            class="nav-link dropdown-toggle d-flex align-items-center gap-5 text-body-color"
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            @@include('./sprite.html', { 'id': 'map-icon', 'width': '16px',
+            'height': '16px' }) Москва
+          </a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+          <span class="fs-7"
+            >Метро Тульская, ул. Серпуховский Вал, д.17, к.1</span
+          >
+        </div>
+        <div
+          class="text-center d-flex flex-column justify-content-center text-center mt-15"
+        >
+          <a href="tel:80000000000" class="text-body-color fs-4 fw-bold"
+            >+7 (499) 350 00 94</a
+          >
+          <span class="fs-8 text-muted">Без выходных с 10:00 до 20:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="position-relative">
+      <div class="nav-down-container collapse" id="collapseExample">
+        <div
+          class="position-absolute top-15 end-15 d-block d-xxl-none hide-collapse"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+        >
+          @@include('./sprite.html', { 'id': 'cross', 'width': '24px', 'height':
+          '24px' })
+        </div>
+        <nav class="nav-down">
+          <ul>
+            <li>
+              <div class="nav-down__container nav-down__container--active">
+                <a href="akcii.html">
+                  <img width='24'
+                height='24px' src="./images/menu/clipboard.svg" alt="">
+                  
+                  <span>Акции</span></a
+                >
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+              <ul>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+                <li><a href="#">HUSQVARNA</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav-down__container">
+                <a href="#">
+                  <img width='24'
+                height='24px' src="./images/menu/sewing-machine.svg" alt="">
+                  
+                  <span>Швейные машинки</span>
+                </a>
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="nav-down__container">
+                <a href="#">
+                  <img width='24'
+                height='24px' src="./images/menu/iron.svg" alt="">
+                 
+                  <span>Гладильная техника</span>
+                </a>
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="nav-down__container">
+                <a href="#">
+                  <img width='24'
+                height='24px' src="./images/menu/dummy-1.svg" alt="">
+                  
+                  <span>Манекены</span>
+                </a>
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="nav-down__container">
+                <a href="#">
+                  <img width='24'
+                height='24px' src="./images/menu/needles.svg" alt="">
+                  
+                  <span>Фурнитура</span>
+                </a>
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="nav-down__container">
+                <a href="#">
+                  <img width='24'
+                height='24px' src="./images/menu/printer.svg" alt="">
+                  
+                  <span>Принтеры по текстилю</span>
+                </a>
+                <div class="nav-down__down-btn">
+                  @@include('./sprite.html', { 'id': 'down', 'width': '16px',
+                  'height': '16px' })
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="border-top p-15 d-block d-xxl-none">
+            <a href="akcii.html" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1.svg"
+                alt=""
+              />
+              <span>АКТУАЛЬНЫЕ АКЦИИ</span>
+            </a>
+            <a href="/news-page.html" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-1.svg"
+                alt=""
+              />
+              <span>ПОСЛЕДНИЕ НОВОСТИ</span>
+            </a>
+            <a href="#" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-2.svg"
+                alt=""
+              />
+              <span>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</span>
+            </a>
+            <a href="#" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-3.svg"
+                alt=""
+              />
+              <span>СПОСОБЫ ДОСТАВКИ</span>
+            </a>
+            <a href="#" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-4.svg"
+                alt=""
+              />
+              <span>САМОВЫВОЗ СО СКЛАДА</span>
+            </a>
+            <a href="#" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-5.svg"
+                alt=""
+              />
+              <span>КОНТАКТЫ ДЛЯ СВЯЗИ</span>
+            </a>
+            <a href="#" class="d-flex gap-10 align-items-center mb-15">
+              <img
+                width="42"
+                height="42"
+                src="./images/menu-drop/Frame 1-6.svg"
+                alt=""
+              />
+              <span>ОТЗЫВЫ О МАГАЗИНЕ</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

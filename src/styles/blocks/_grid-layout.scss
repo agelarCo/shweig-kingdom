@@ -1,0 +1,11 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .grid-layout {
+        gap: 15px;
+    }
+}

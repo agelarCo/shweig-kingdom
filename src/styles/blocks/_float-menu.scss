@@ -1,0 +1,79 @@
+.float-menu-container {
+  position: fixed;
+  top: 250px;
+  right: 50px;
+}
+.float-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 250px;
+  right: 200px;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+
+  &__btn {
+    background-color: $secondary;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+    & svg {
+      color: white;
+      margin: auto;
+      height: 24px;
+      width: 24px;
+    }
+    &:hover {
+      transition: background-color 0.2s ease-in-out;
+      background-color: $primary;
+    }
+  }
+  &__btn--shop {
+    & span {
+      display: flex;
+      border-radius: 50%;
+      color: black;
+      border: 1px solid $secondary;
+      background-color: white;
+      width: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      height: 20px;
+      flex: 0;
+      padding-top: 3px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__btn--shop-active {
+    background-color: $primary;
+    & span {
+      border: 1px solid $primary;
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  .float-menu {
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .float-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: auto;
+    right: 200px;
+    bottom: 30px;
+  }
+}

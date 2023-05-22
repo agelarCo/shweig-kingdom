@@ -1,0 +1,100 @@
+.filter {
+  background: #f9f9f9;
+  padding: 15px;
+  &__container-buttons {
+    margin-bottom: 30px;
+  }
+  &__list-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  &__layout-buttons {
+    display: flex;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.filter-button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 5px;
+  text-transform: uppercase;
+  color: $body-color;
+  border: 1px solid $body-color;
+  white-space: nowrap;
+  text-align: center;
+  &--active {
+    background-color: white;
+    border-color: #f8ede6;
+  }
+}
+.filter-button--min {
+  flex: 1;
+}
+.filter-navigation {
+  display: flex;
+  gap: 5px;
+}
+
+.filter-navigation-btn {
+  background-color: white;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.filter-navigation-btn-prev {
+}
+.filter-navigation-btn-next {
+}
+
+@media (max-width: 992px) {
+  .filter {
+    &__container-buttons {
+      margin-bottom: 10px;
+    }
+    &__list-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  .filter-button {
+    font-size: 12px;
+  }
+
+  .filter-navigation {
+    justify-content: center;
+  }
+}
+
+.filter-list-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 210px;
+  flex: 1;
+  .form-select {
+    background-color: transparent;
+    border-radius: 0;
+    border-color: #cccccc;
+    display: block;
+    width: auto;
+    flex: 1;
+    text-transform: capitalize;
+  }
+
+  .form-select--active {
+    background-color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-list-options {
+    .form-select {
+      font-size: 12px;
+    }
+  }
+}

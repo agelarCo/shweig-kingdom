@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Главная' })
+  <body class="page">
+    @@include('html/header.html', { })
+    <main class="overflow-hidden">
+      @@include('html/breadcrumbs.html', { })
+      <div class="container">
+        <div class="box-title">
+          <div class="box-title__container">
+            <h1 class="box-title__title">Корзина</h1>
+          </div>
+        </div>
+        <style>
+          .map-controls-button:hover .map-controls-button:after{
+    transform: translateX(0%);
+    transition: 0.1s ease-in;
+    opacity: 1;
+  }
+  .map-controls-button--active .map-controls-button:after {
+    transform: translateX(0%);
+    transition: 0.1s ease-in;
+    opacity: 1;
+  }
+        </style>
+        <span class="fw-bold fs-spec">Ваши покупки</span>
+        <div
+          class="d-flex fw-bold pb-lg-15 pb-5 border-bottom mb-5 mb-lg-15 mt-15"
+        >
+          <div class="d-flex wp-50 flex-column flex-lg-row fs-8 fs-lg-6">
+            <div class="wp-10 text-center">Фото</div>
+            <div class="wp-90 ps-0 ps-lg-10">Наименование</div>
+          </div>
+          <div
+            class="d-flex wp-50 justify-content-between flex-column flex-lg-row text-center fs-8 fs-lg-6"
+          >
+            <div class="wp-100 wp-lg-25">Кол-во</div>
+            <div class="wp-100 wp-lg-25">Цена</div>
+            <div class="wp-100 wp-lg-25">Итого</div>
+            <div class="wp-100 wp-lg-25"></div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex fw-bold gap-10 bg-system-component mb-5 mb-lg-15">
+            <div class="d-flex wp-50 flex-column flex-lg-row">
+              <div class="wp-45 wp-lg-10 text-center mb-5 mb-lg-0">
+                <a
+                  href="#"
+                  class="responsive-img box-aspect box-aspect--square"
+                >
+                  <img
+                    class="responsive-img__image"
+                    src="./images/cart/cart-goods.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="wp-100 wp-lg-90 ps-10 d-flex align-items-center">
+                <div class="fs-8 fs-lg-7 py-5">
+                  <p class="fw-semi-bold mb-5">Ножницы сниппер металлические</p>
+                  <span class="" style="color: #454950"
+                    >Артикул: 4366886856</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex wp-50 py-5 py-lg-0 justify-content-between flex-wrap flex-lg-nowrap text-center"
+            >
+              <div class="wp-100 wp-lg-25 d-flex justify-content-center">
+                <div class="d-flex align-items-center gap-5">
+                  <div class="btn-dec">
+                    @@include('./html/sprite.html', { 'id': 'incr', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                  <input type="text" class="cart-input" value="1" />
+                  <div class="btn-incr">
+                    @@include('./html/sprite.html', { 'id': 'dec', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wp-100 wp-lg-25 align-items-center d-flex justify-content-center"
+              >
+                <span class="fw-bold">390 руб</span>
+              </div>
+              <div class="d-flex wp-100 gap-10 wp-lg-50 justify-content-center">
+                <div
+                  class="wp-auto wp-lg-50 align-items-center d-flex justify-content-center"
+                >
+                  <span class="fw-bold text-primary ws-nowrap">390 руб</span>
+                </div>
+                <div
+                  class="wp-auto wp-lg-50 d-flex justify-content-lg-end justify-content-start align-items-center pe-10"
+                >
+                  <div>
+                    @@include('./html/sprite.html', { 'id': 'delete', 'width':
+                    '16px', 'height': '18px' })
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex fw-bold gap-10 bg-system-component mb-5 mb-lg-15">
+            <div class="d-flex wp-50 flex-column flex-lg-row">
+              <div class="wp-45 wp-lg-10 text-center mb-5 mb-lg-0">
+                <a
+                  href="#"
+                  class="responsive-img box-aspect box-aspect--square"
+                >
+                  <img
+                    class="responsive-img__image"
+                    src="./images/cart/cart-goods.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="wp-100 wp-lg-90 ps-10 d-flex align-items-center">
+                <div class="fs-8 fs-lg-7 py-5">
+                  <p class="fw-semi-bold mb-5">Ножницы сниппер металлические</p>
+                  <span class="" style="color: #454950"
+                    >Артикул: 4366886856</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex wp-50 py-5 py-lg-0 justify-content-between flex-wrap flex-lg-nowrap text-center"
+            >
+              <div class="wp-100 wp-lg-25 d-flex justify-content-center">
+                <div class="d-flex align-items-center gap-5">
+                  <div class="btn-dec">
+                    @@include('./html/sprite.html', { 'id': 'incr', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                  <input type="text" class="cart-input" value="1" />
+                  <div class="btn-incr">
+                    @@include('./html/sprite.html', { 'id': 'dec', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wp-100 wp-lg-25 align-items-center d-flex justify-content-center"
+              >
+                <span class="fw-bold">390 руб</span>
+              </div>
+              <div class="d-flex wp-100 gap-10 wp-lg-50 justify-content-center">
+                <div
+                  class="wp-auto wp-lg-50 align-items-center d-flex justify-content-center"
+                >
+                  <span class="fw-bold text-primary ws-nowrap">390 руб</span>
+                </div>
+                <div
+                  class="wp-auto wp-lg-50 d-flex justify-content-lg-end justify-content-start align-items-center pe-10"
+                >
+                  <div>
+                    @@include('./html/sprite.html', { 'id': 'delete', 'width':
+                    '16px', 'height': '18px' })
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex fw-bold gap-10 bg-system-component mb-5 mb-lg-15">
+            <div class="d-flex wp-50 flex-column flex-lg-row">
+              <div class="wp-45 wp-lg-10 text-center mb-5 mb-lg-0">
+                <a
+                  href="#"
+                  class="responsive-img box-aspect box-aspect--square"
+                >
+                  <img
+                    class="responsive-img__image"
+                    src="./images/cart/cart-goods.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="wp-100 wp-lg-90 ps-10 d-flex align-items-center">
+                <div class="fs-8 fs-lg-7 py-5">
+                  <p class="fw-semi-bold mb-5">Ножницы сниппер металлические</p>
+                  <span class="" style="color: #454950"
+                    >Артикул: 4366886856</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex wp-50 py-5 py-lg-0 justify-content-between flex-wrap flex-lg-nowrap text-center"
+            >
+              <div class="wp-100 wp-lg-25 d-flex justify-content-center">
+                <div class="d-flex align-items-center gap-5">
+                  <div class="btn-dec">
+                    @@include('./html/sprite.html', { 'id': 'incr', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                  <input type="text" class="cart-input" value="1" />
+                  <div class="btn-incr">
+                    @@include('./html/sprite.html', { 'id': 'dec', 'width':
+                    '22px', 'height': '25px' })
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wp-100 wp-lg-25 align-items-center d-flex justify-content-center"
+              >
+                <span class="fw-bold">390 руб</span>
+              </div>
+              <div class="d-flex wp-100 gap-10 wp-lg-50 justify-content-center">
+                <div
+                  class="wp-auto wp-lg-50 align-items-center d-flex justify-content-center"
+                >
+                  <span class="fw-bold text-primary ws-nowrap">390 руб</span>
+                </div>
+                <div
+                  class="wp-auto wp-lg-50 d-flex justify-content-lg-end justify-content-start align-items-center pe-10"
+                >
+                  <div>
+                    @@include('./html/sprite.html', { 'id': 'delete', 'width':
+                    '16px', 'height': '18px' })
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-15">
+          <div
+            class="d-flex gap-10 justify-content-end flex-column flex-lg-row"
+          >
+            <div
+              class="d-flex wp-lg-30 align-items-center gap-10 mb-lg-0 mb-5"
+            >
+              <span class="wp-lg-50 wp-40">Подарочный сертификат</span>
+              <div class="position-relative wp-lg-50 wp-60">
+                <input
+                  type="text"
+                  class="form-control py-15"
+                  style="border-radius: 0"
+                />
+                <div class="position-absolute top-15 end-10">
+                  @@include('./html/sprite.html', { 'id': 'submit-active',
+                  'width': '26px', 'height': '26px' })
+                </div>
+              </div>
+            </div>
+            <div class="d-flex wp-lg-30 align-items-center gap-10">
+              <span class="wp-lg-50 wp-40 text-lg-end text-start"
+                >Купон на скидку</span
+              >
+              <div class="position-relative wp-lg-50 wp-60">
+                <input
+                  type="text"
+                  class="form-control py-15"
+                  style="border-radius: 0"
+                />
+                <div class="position-absolute top-15 end-10">
+                  @@include('./html/sprite.html', { 'id': 'submit-active',
+                  'width': '26px', 'height': '26px' })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex py-10 justify-content-center justify-content-lg-end">
+          <div class="wp-30 fw-bold d-flex gap-10 justify-content-center">
+            <span> Сумма:</span> <span>780 руб</span>
+          </div>
+        </div>
+        <div
+          class="d-flex py-10 justify-content-center justify-content-lg-end"
+          style="background-color: #f8ede6"
+        >
+          <div class="wp-30 fw-bold d-flex gap-10 justify-content-center">
+            <span> Сумма:</span> <span class="text-primary">780 руб</span>
+          </div>
+        </div>
+        <div class="row gy-15 mt-15 mt-lg-30">
+          <div class="col-lg-6">
+            <div class="border p-10 p-lg-15">
+              <span class="fw-bold fs-7 fs-lg-5">Контактная информация</span>
+              <div class="mt-15 mt-lg-30">
+                <div
+                  class="d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-5 gap-lg-10 mb-5 mb-lg-15"
+                >
+                  <div class="wp-lg-20">
+                    <span class=""> Имя </span>
+                    <span class="text-primary fs-4">*</span>
+                  </div>
+                  <div class="wp-100 wp-lg-80">
+                    <input
+                      type="text"
+                      style="border-radius: 0px"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-5 gap-lg-10 mb-5 mb-lg-15"
+                >
+                  <div class="wp-lg-20">
+                    <span class=""> Отчество </span>
+                    <span class="text-primary fs-4">*</span>
+                  </div>
+                  <div class="wp-100 wp-lg-80">
+                    <input
+                      type="text"
+                      style="border-radius: 0px"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-start align-items-lg-center flex-column flex-lg-row gap-5 gap-lg-10 mb-5 mb-lg-15"
+                >
+                  <div class="wp-lg-20">
+                    <span class=""> Фамилия </span>
+                    <span class="text-primary fs-4">*</span>
+                  </div>
+                  <div class="wp-100 wp-lg-80">
+                    <input
+                      type="text"
+                      style="border-radius: 0px"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="d-flex gap-5 gap-lg-15 flex-column flex-lg-row my-5 my-lg-30 mb-5 mb-lg-15"
+                >
+                  <div class="d-flex flex-column gap-5 wp-100 wp-lg-50">
+                    <div class="">
+                      <span class=""> Email </span>
+                      <span class="text-primary fs-4">*</span>
+                    </div>
+                    <div class="wp-100">
+                      <input
+                        type="text"
+                        style="border-radius: 0px"
+                        class="form-control wp-100"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column gap-5 wp-100 wp-lg-50">
+                    <div class="">
+                      <span class=""> Телефон </span>
+                      <span class="text-primary fs-4">*</span>
+                    </div>
+                    <div class="wp-100">
+                      <input
+                        type="text"
+                        style="border-radius: 0px"
+                        class="form-control wp-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-5 mb-5 mb-lg-30">
+                  <div class="">
+                    <span class=""> Адрес доставки </span>
+                    <span class="text-primary fs-4">*</span>
+                  </div>
+                  <div class="wp-100">
+                    <input
+                      type="text"
+                      style="border-radius: 0px"
+                      class="form-control wp-100"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-5">
+                  <div class="">
+                    <span class=""> Комментарий </span>
+                    <span class="text-primary fs-4">*</span>
+                  </div>
+                  <div class="wp-100">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      class="form-control"
+                      style="resize: none"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex h-100 flex-column gap-15 gap-lg-30">
+              <div class="p-10 p-lg-15 border">
+                <span class="fw-bold fs-7 fs-lg-5">Способ доставки</span>
+                <div class="mt-15 mt-lg-30 d-flex flex-column gap-5 gap-lg-15">
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Фиксированная стоимость доставки
+                      <span class="fw-bold ws-nowrap">350 руб.</span>
+                    </div>
+                  </label>
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Самовывоз из магазина
+                      <span class="fw-bold ws-nowrap">350 руб.</span>
+                    </div>
+                  </label>
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Самовывоз со склада СДЭК
+                      <span class="fw-bold ws-nowrap">350 руб.</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="flex-grow-1 p-10 p-lg-15 border">
+                <span class="fw-bold fs-7 fs-lg-5">Способ доставки</span>
+                <div class="mt-15 mt-lg-30 d-flex flex-column gap-5 gap-lg-15">
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Оплата при доставке
+                    </div>
+                  </label>
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Оплата картой на сайте
+                    </div>
+                  </label>
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Оплата в кредит (Тинькофф)
+                    </div>
+                  </label>
+                  <label class="custom-input-checkbox">
+                    <input type="radio" name="val" value="" />
+                    <div class="custom-input-checkbox__container">
+                      <div class="custom-input-checkbox__circle">
+                        <div class="custom-input-checkbox__dot"></div>
+                      </div>
+
+                      Банковсский перевод
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex mt-15 mt-lg-30 justify-content-center flex-column text-center mb-30 pb-lg-50"
+        >
+          <p style="color: #454950" class="mb-15 fs-8">
+            Отправляя заказ, вы даёте своё согласие на обработку персональных
+            данных иподтверждаете ознакомление с условиями продажи
+          </p>
+          <div class="mb-15">
+            <div
+              data-bs-toggle="modal"
+              data-bs-target="#lastPrice"
+              class="btn btn-primary text-white text-uppercase px-60 fw-semi-bold py-10"
+              style="border-radius: 0"
+            >
+              Отправить заказ
+            </div>
+          </div>
+
+          <p
+            style="color: #454950; max-width: 910px; margin: auto"
+            class="fs-8"
+          >
+            Данный интернет-ресурс носит исключительно информационный характер и
+            ни при каких условиях не является публичной офертой, определяемой
+            положениями ч. 2 ст. 437м Гражданского кодекса Российской Федерации.
+            Для получения подробной информации о стоимости товара, наличии,
+            комплектации и сроках доставки, пожалуйста, обращайтесь к
+            сотрудникам компании "Швейное Королевство" по тел. +7 (499)
+            350-00-94.
+          </p>
+        </div>
+      </div>
+    </main>
+    @@include('./html/footer.html', { })
+  </body>
+</html>

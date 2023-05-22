@@ -1,0 +1,40 @@
+.box-title {
+  &__container {
+    display: flex;
+  }
+ 
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+h1.box-title__title {
+  font-size: 48px;
+}
+@media (max-width: 992px) {
+  .box-title {
+    &__container {
+    }
+
+    &__title-decorate {
+      width: 14px;
+      height: 14px;
+      border: none;
+      margin-top: 1px;
+      &::before {
+      }
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  h1.box-title__title {
+    font-size: 24px;
+  }
+}

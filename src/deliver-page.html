@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Главная' })
+  <body class="page">
+     @@include('html/header.html', { })
+    <main class="overflow-hidden">
+      @@include('html/breadcrumbs.html', { })
+      <div class="container pb-30 pb-lg-50">
+        <div class="box-title">
+          <div class="box-title__container">
+            <h1 class="box-title__title">Доставка и оплата</h1>
+          </div>
+        </div>
+        <div class="row gy-15">
+          <div class="col-xl-6">
+            <span class="fw-bold fs-5 fs-lg-4">Доставка по Москве и Московской области:</span>
+            <div class="d-flex gap-15 mt-15">
+              <div class="flex-shrink-0">
+                @@include('./html/sprite.html', { 'id': 'delivery', 'width':
+                '45px', 'height': '45px' })
+              </div>
+
+              <p class="mb-0">
+                Доставка заказа осуществляется с помощью собственной курьерской
+                компанией по Москве и Московской облости.
+              </p>
+            </div>
+            <div class="ps-0 ps-xl-50 mt-15">
+              <span class="fw-bold">Если Вы заказываете у нас:</span>
+              <ul class="mt-15">
+                <li class="mb-10">
+                  Мы осуществим доставку в любой день недели​
+                </li>
+                <li class="mb-10">
+                  Мы обязательно согласуем с Вами дату и время доставки товара.​
+                </li>
+                <li>Курьер позвонит Вам за час до прибытия.​</li>
+              </ul>
+            </div>
+            <div
+              class="d-flex gap-15 py-15 px-15 px-xl-30 align-items-center"
+              style="background: #f8ede6"
+            >
+              <p class="mb-0 wp-50 fs-8 fs-lg-6">
+                Если Вам нужна временная доставка в диапозоне трех часов -
+                стоимость данной услуги состовляет
+              </p>
+              <p class="mb-0 fw-bold wp-50 fs-8 fs-lg-6">
+                890 руб. + километраж за МКАД (если доставка за МКАД)
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div
+              class="border border-1 py-15 py-lg-70 px-lg-30 px-0 text-center"
+            >
+              <div class="d-flex gap-30">
+                <div class="wp-50 d-flex flex-column justify-content-between align-items-center">
+                  <span class="fw-bold fs-7 fs-lg-6"
+                    >Доставка товара по <br />
+                    Москве в пределах МКАД</span
+                  >
+                  <div class="wp-100">
+                    <div
+                      class="py-15 border-top border-bottom my-15 fs-8 fs-lg-7"
+                    >
+                      <span class="">Если сумма заказа</span>
+                    </div>
+                    <div class="d-flex fs-8 fs-lg-7">
+                      <div class="wp-50">
+                        <p>Более 10 000 руб.</p>
+                        <span class="fw-bold">Бесплатно*</span>
+                      </div>
+                      <div class="wp-50">
+                        <p>Менее 10 000 руб.</p>
+                        <span class="fw-bold">350* рублей</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wp-50 d-flex flex-column justify-content-between align-items-center">
+                  <span class="fw-bold fs-7 fs-lg-6"
+                    >Доставка товара <br />
+                    за пределами МКАД</span
+                  >
+                  <div class="wp-100">
+                    <div
+                      class="py-15 border-top border-bottom my-15 fs-8 fs-lg-7"
+                    >
+                      <span>Если сумма заказа</span>
+                    </div>
+                    <div class="d-flex fs-8 fs-lg-7">
+                      <div class="wp-50">
+                        <p>Более 10 000 руб.</p>
+                        <span class="fw-bold">Бесплатно*</span>
+                      </div>
+                      <div class="wp-50">
+                        <p>Менее 10 000 руб.</p>
+                        <span class="fw-bold">350* рублей</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="fs-7 mt-30">
+                * - все цены указаны при условии доставки без ограничения по
+                времени (с 10:00 до 20:00)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-15 mt-lg-30 mt-0">
+          <div class="col-xl-6">
+            <span class="fw-bold fs-lg-4 fs-5"
+              >Доставка в регионы Российской Федерации:</span
+            >
+            <div class="fs-8 fs-lg-7 mt-15">
+              <p class="">
+                Мы доставляем выбранный Вами товар в любой город России!
+              </p>
+              <p>
+                Доставка осуществляется с помощью транспортной компании
+                выбранной вами, либо предложенной нами.
+              </p>
+              <p>
+                Стоимость доставки в города России рассчитывается индивидуально
+                и займет минимальное количество времени.
+              </p>
+              <p>Наши менеджеры будут рады вам помочь!</p>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="border border-1 p-15 p-lg-30 text-center">
+              <p class="fw-bold fs-lg-5 fs-6 mb-15">
+                Рекомендуем пользоваться следующими компаниями:
+              </p>
+              <div class="d-flex gap-30 border-top border-bottom py-15">
+                <div
+                  class="wp-50 d-flex flex-column justify-content-between align-items-center"
+                >
+                  <img
+                    width="75px"
+                    src="./images/delivery-page/sdek.svg"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column fs-8 fs-lg-7 mt-10">
+                    <span>«СДЭК» </span
+                    ><span class="fw-bold">от 350 рублей</span>
+                  </div>
+                </div>
+                <div
+                  class="wp-50 d-flex flex-column justify-content-between align-items-center"
+                >
+                  <img
+                    width="90px"
+                    src="./images/delivery-page/boxberry.svg"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column fs-8 fs-lg-7 mt-10">
+                    <span>«Боксберри» </span
+                    ><span class="fw-bold">от 350 рублей</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-30 border-bottom py-15">
+                <div
+                  class="wp-50 d-flex flex-column justify-content-between align-items-center"
+                >
+                  <img
+                    width="90px"
+                    src="./images/delivery-page/del-linii.svg"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column fs-8 fs-lg-7 mt-10">
+                    <span> «Деловые Линии» </span
+                    ><span class="fw-bold">от 350 рублей</span>
+                  </div>
+                </div>
+                <div
+                  class="wp-50 d-flex flex-column justify-content-between align-items-center"
+                >
+                  <img
+                    width="45px"
+                    src="./images/delivery-page/russian-mail.svg"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column fs-8 fs-lg-7 mt-10">
+                    <span>Почта России</span
+                    ><span class="fw-bold">от 350 рублей</span>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0 mt-15 mt-lg-30 fs-7">
+                Отгрузка товара в транспортную компанию производится на
+                следующий день, <br />
+                после подтверждения оплаты заказа.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('./html/footer.html', { })
+  </body>
+</html>

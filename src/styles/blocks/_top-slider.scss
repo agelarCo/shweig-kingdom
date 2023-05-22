@@ -1,0 +1,38 @@
+.top-slider-section {
+  .slider-navigation-container {
+    top: auto;
+    right: 90px;
+    bottom: 25px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-slider-section {
+    .slider-navigation-container {
+      top: auto;
+      right: 0px;
+      left: auto;
+      bottom: 15px;
+      z-index: 100;
+    }
+  }
+}
+
+.top-slider {
+  position: relative;
+  &__slide {
+  }
+}
+
+.top-slider-block {
+  display: block;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-slider-block {
+  }
+}
