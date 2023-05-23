@@ -270,6 +270,10 @@ if (document.querySelector(".scroll-mobile-decorator-scroller")) {
   new SimpleBar(document.querySelector(".scroll-mobile-decorator-scroller"));
 }
 
+if (document.querySelector(".table-compare")) {
+  new SimpleBar(document.querySelector(".table-compare"));
+}
+
 if (document.querySelector(".scroll-mobile-decorator-scroller-new")) {
   new SimpleBar(
     document.querySelector(".scroll-mobile-decorator-scroller-new")

@@ -16,6 +16,8 @@
       max-width: 100%;
     }
   }
+  &__labels:hover {
+  }
   &__content {
   }
 }
@@ -25,25 +27,41 @@
   right: 10px;
   display: flex;
   gap: 10px;
-  align-items: center;z-index: 20;
-  
-  
+  align-items: center;
+  z-index: 20;
+
   &--big {
     right: auto;
     top: 10px;
     left: 15px;
     align-items: start;
     flex-direction: column;
-    
   }
   &--big &__label {
-    background: #F8EDE6;
+    background: transparent;
+    color: transparent;
     font-size: 12px;
     display: flex;
     gap: 5px;
     align-items: center;
     border-radius: 50px;
+    width: 45px;
+    transition: background 0.3s ease-in, color 0.3s ease-in, width 0.1s ease-out;
+    svg {
+      flex-shrink: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+  &--big &__label:hover {
+    span {
+      display: inline;
+    }
     width: 135px;
+    background: #f8ede6;
+    color: $body-color;
+    transition: background 0.3s ease-in, color 0.3s ease-in, width 0.1s ease-out;
   }
 }
 .product-card-content {

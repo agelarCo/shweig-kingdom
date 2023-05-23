@@ -205,7 +205,9 @@
   animation-fill-mode: both;
 }
 
-
+.old-price {
+  text-decoration: line-through;
+}
 
 @keyframes backInLeft {
   0% {
@@ -223,6 +225,35 @@
     opacity: 1;
   }
 }
+
+.table-new {
+  tr {
+    td {
+      width: 20%;
+      text-align: center;
+      vertical-align: middle;
+    }
+    a {
+      text-decoration: underline;
+      color: $primary;
+    }
+  }
+  tr {
+    td:nth-child(1) {
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+  tr:nth-child(2) {
+    white-space: nowrap;
+  }
+  thead {
+    background-color: $primary;
+    color: white;
+    font-size: 20px;
+  }
+}
+
 
 .backInLeft {
   animation-name: backInLeft;
