@@ -456,10 +456,3 @@ let certSlider = new Swiper(".certificate-slider", {
 window["FLS"] = location.hostname === "localhost";
 
 
-const myModalAlternative = new Modal('#notificationModal',{
-  keyboard: false,
-  backdrop: false,
-  focus: true
-});
-      
-myModalAlternative.toggle();
