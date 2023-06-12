@@ -36,48 +36,46 @@ if (window.innerWidth > 1200) {
       zoomer.style.backgroundPosition = x + "% " + y + "%";
       zoomer.style.backgroundSize = `${zoomer.offsetWidth * 1.5}px ${
         zoomer.offsetHeight * 1.5
-      }px`;
+      }px !important`;
     });
     elem.addEventListener("mouseleave", (e) => {
       var zoomer = e.currentTarget;
       console.log("red");
-      zoomer.style.backgroundSize = `${zoomer.offsetWidth}px ${zoomer.offsetHeight}px`;
+      zoomer.style.backgroundSize = `${zoomer.offsetWidth}px ${zoomer.offsetHeight}px !important`;
     });
   });
 }
 
-
-const wrapper = document.querySelector('.parallax');
-const layers = document.querySelectorAll('.parallax__layer');
+const wrapper = document.querySelector(".parallax");
+const layers = document.querySelectorAll(".parallax__layer");
 
 if (wrapper) {
   const reset = () => {
-    layers.forEach((layer)=>{
-        layer.removeAttribute('style');
+    layers.forEach((layer) => {
+      layer.removeAttribute("style");
     });
-  }
-   
-  wrapper.addEventListener('mousemove', (evt) => {
+  };
+
+  wrapper.addEventListener("mousemove", (evt) => {
     console.log(2123123);
-    
-   //размер области просмотра
+
+    //размер области просмотра
     const parallaxLeftOffset = wrapper.getBoundingClientRect().left;
     const parallaxTopOffset = wrapper.getBoundingClientRect().top;
-  
+
     // координаты центра экрана
     const coordX = evt.clientX - parallaxLeftOffset - 0.5 * wrapper.offsetWidth;
-    const coordY = evt.clientY - parallaxTopOffset - 0.5 *  wrapper.offsetHeight;
-      
-    layers.forEach((layer)=>{
+    const coordY = evt.clientY - parallaxTopOffset - 0.5 * wrapper.offsetHeight;
+
+    layers.forEach((layer) => {
       const layerSpeed = layer.dataset.speed;
-      const x = - (coordX * layerSpeed).toFixed(2);
-      const y = - (coordY * layerSpeed).toFixed(2);
-      layer.setAttribute('style', `transform: translate(${x}px, ${y}px);`)
+      const x = -(coordX * layerSpeed).toFixed(2);
+      const y = -(coordY * layerSpeed).toFixed(2);
+      layer.setAttribute("style", `transform: translate(${x}px, ${y}px);`);
     });
   });
-  wrapper.addEventListener('mouseout', reset);
+  wrapper.addEventListener("mouseout", reset);
 }
-
 
 let ratings = document.querySelectorAll(".rating");
 if (ratings) {
@@ -185,12 +183,12 @@ if (document.querySelector(".map-controls-block__input")) {
     });
 }
 
-
-
-let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+let tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
 let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new Tooltip(tooltipTriggerEl)
-})
+  return new Tooltip(tooltipTriggerEl);
+});
 
 new AgelarMap("init-map--js", {
   pointImage: "./images/pickup/time.svg",
@@ -454,5 +452,3 @@ let certSlider = new Swiper(".certificate-slider", {
 });
 
 window["FLS"] = location.hostname === "localhost";
-
-
