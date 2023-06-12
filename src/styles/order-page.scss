@@ -1,0 +1,65 @@
+.large-field {
+  @extend .form-control, .wp-100;
+}
+
+.checkout-content {
+  display: flex;
+}
+
+.simplecheckout-left-column {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    @extend .form-control, .wp-100;
+    border-radius: 0px;
+  }
+}
+.simplecheckout-right-column {
+  input[type="radio"],
+  input[type="checkbox"] {
+    @extend .form-check-input;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .quote {
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .code {
+    display: flex;
+    align-items: start;
+    width: auto;
+  }
+}
+
+.simplecheckout-block-content {
+  padding: 15px;
+}
+
+.checkout-heading {
+  @extend .fw-bold, .fs-7, .fs-lg-5;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.simplecheckout-table-form .simplecheckout-table-form-left {
+}
+
+.simplecheckout-button-block {
+  display: flex;
+  justify-content: center;
+
+  a.btn {
+    border-radius: 0;
+    @extend .text-white,
+      .fw-semi-bold,
+      .btn,
+      .btn-primary,
+      .text-uppercase,
+      .px-60,
+      .py-10;
+  }
+}

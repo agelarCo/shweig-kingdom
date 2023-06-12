@@ -22,16 +22,15 @@ class RatingStars {
       const ratingItem = ratingItems[index];
       
       ratingItem.addEventListener("mouseenter", (e) => {
-        if(this.statusDown) return;
+        
         this._initRatingVars(rating);
         this._setRatingActiveWidth(ratingItem.value);
       });
       ratingItem.addEventListener("mouseleave", (e) => {
-        if(this.statusDown) return;
+        
         this._setRatingActiveWidth();
       });
       ratingItem.addEventListener("click", (e) => {
-        if(this.statusDown) return;
         
         this._initRatingVars(rating);
         this.ratingValue.innerHTML = index + 1;
