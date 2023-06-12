@@ -78,11 +78,14 @@ if (wrapper) {
 }
 
 let ratings = document.querySelectorAll(".rating");
-if (ratings) {
-  ratings.forEach((elem, index) => {
-    new StarRating(elem);
-  });
-}
+
+window.addEventListener("load", () => {
+  if (ratings) {
+    ratings.forEach((elem, index) => {
+      new StarRating(elem);
+    });
+  }
+});
 
 /* nav-down__down-btn */
 /* 
@@ -164,24 +167,25 @@ if (listRawSity) {
 }
 
 /* map-controls-block__input */
-
-let filteredButtons = document.querySelectorAll(".map-controls-button");
-if (document.querySelector(".map-controls-block__input")) {
-  document
-    .querySelector(".map-controls-block__input")
-    .addEventListener("input", (e) => {
-      let maineText = e.target.value.toLowerCase();
-      filteredButtons.forEach((elem, index) => {
-        if (elem.textContent.toLowerCase().indexOf(maineText) >= 1) {
-          elem.classList.remove("d-none");
-        } else if (maineText == "") {
-          elem.classList.remove("d-none");
-        } else {
-          elem.classList.add("d-none");
-        }
+window.addEventListener("load", () => {
+  let filteredButtons = document.querySelectorAll(".map-controls-button");
+  if (document.querySelector(".map-controls-block__input")) {
+    document
+      .querySelector(".map-controls-block__input")
+      .addEventListener("input", (e) => {
+        let maineText = e.target.value.toLowerCase();
+        filteredButtons.forEach((elem, index) => {
+          if (elem.textContent.toLowerCase().indexOf(maineText) >= 1) {
+            elem.classList.remove("d-none");
+          } else if (maineText == "") {
+            elem.classList.remove("d-none");
+          } else {
+            elem.classList.add("d-none");
+          }
+        });
       });
-    });
-}
+  }
+});
 
 let tooltipTriggerList = [].slice.call(
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
