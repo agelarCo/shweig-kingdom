@@ -77,9 +77,10 @@ if (wrapper) {
   wrapper.addEventListener("mouseout", reset);
 }
 
-let ratings = document.querySelectorAll(".rating");
 
-window.addEventListener("load", () => {
+
+window.addEventListener("DOMContentLoaded", () => {
+  let ratings = document.querySelectorAll(".rating");
   if (ratings) {
     ratings.forEach((elem, index) => {
       new StarRating(elem);
@@ -167,7 +168,7 @@ if (listRawSity) {
 }
 
 /* map-controls-block__input */
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   let filteredButtons = document.querySelectorAll(".map-controls-button");
   if (document.querySelector(".map-controls-block__input")) {
     document
