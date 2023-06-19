@@ -143,6 +143,7 @@
 .swiper-slide.zoom {
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: 0px 0px;
   position: relative;
   overflow: hidden;
   cursor: zoom-in;
@@ -153,6 +154,8 @@
   display: block;
   width: 100%;
 }
+
+
 .swiper-slide.zoom img:hover {
   opacity: 0;
 }
