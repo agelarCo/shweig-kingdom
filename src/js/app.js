@@ -366,6 +366,9 @@ let productPageBigSlider = new Swiper(".product-page-big-slider", {
 if (document.querySelector(".top-slider")) {
   let topSlider = new Swiper(".top-slider", {
     modules: [Navigation],
+    autoplay: {
+      delay: 5000,
+    },
     navigation: {
       prevEl: ".top-slider-button-prev",
       nextEl: ".top-slider-button-next",
