@@ -20,7 +20,7 @@
   input[type="checkbox"] {
     @extend .form-check-input;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .quote {
@@ -31,7 +31,10 @@
   .code {
     display: flex;
     align-items: start;
-    width: auto;
+    width: auto !important;
+    input {
+      flex-shrink: 0;
+    }
   }
 }
 

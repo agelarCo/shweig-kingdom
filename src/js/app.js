@@ -41,7 +41,7 @@ if (window.innerWidth > 1200) {
     elem.addEventListener("mouseleave", (e) => {
       var zoomer = e.currentTarget;
       console.log("red");
-      zoomer.style.backgroundSize = `${zoomer.offsetWidth}px ${zoomer.offsetHeight}px !important`;
+      zoomer.style.backgroundSize = `${zoomer.offsetWidth - 100}px ${zoomer.offsetHeight - 100}px !important`;
     });
   });
 }
