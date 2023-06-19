@@ -36,12 +36,12 @@ if (window.innerWidth > 1200) {
       zoomer.style.backgroundPosition = x + "% " + y + "%";
       zoomer.style.backgroundSize = `${zoomer.offsetWidth * 1.5}px ${
         zoomer.offsetHeight * 1.5
-      }px !important`;
+      }px`;
     });
     elem.addEventListener("mouseleave", (e) => {
       var zoomer = e.currentTarget;
       console.log("red");
-      zoomer.style.backgroundSize = `0px 0px !important`;
+      zoomer.style.backgroundSize = `0px 0px`;
     });
   });
 }
