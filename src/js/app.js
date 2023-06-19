@@ -7,7 +7,7 @@ import {
   menuInit,
 } from "./modules";
 
-import Swiper, { Navigation, Pagination, Thumbs, Controller } from "swiper";
+import Swiper, { Navigation, Pagination, Thumbs, Controller, Autoplay } from "swiper";
 import SimpleBar from "simplebar";
 
 import Tabs from "./tabs.js";
@@ -365,7 +365,7 @@ let productPageBigSlider = new Swiper(".product-page-big-slider", {
 
 if (document.querySelector(".top-slider")) {
   let topSlider = new Swiper(".top-slider", {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     autoplay: {
       delay: 5000,
     },
